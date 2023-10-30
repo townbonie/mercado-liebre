@@ -1,0 +1,430 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  background-color: #ebebeb;
+}
+
+header {
+  background-color: #eac926;
+  padding: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulares {
+  font-size: 24px;
+}
+
+.descuentos,
+.descripciones {
+  font-size: 16px;
+}
+
+.cuerpos {
+  font-size: 12px;
+  text-align: center;
+}
+
+.precio {
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+.link-nav {
+  color: #000;
+  text-decoration: none;
+}
+
+.list-nav li {
+  list-style-type: none;
+}
+
+.list-nav {
+  display: none;
+  margin: 10px 0;
+}
+
+.burger-menu {
+  display: block;
+  height: 35px;
+  width: 35px;
+  margin: 20px auto;
+  background-color: #1259c3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.en-negrita {
+  font-size: 14px;
+}
+
+footer {
+  background-color: white;
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.div-footer {
+  text-align: center;
+  width: 90%;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.div-icon-footer {
+  font-size: 2em;
+  width: 100%;
+  color: #1259c3;
+  margin-bottom: 10px;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.div-descripcion-producto {
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+main section article div i {
+  display: block;
+  font-size: 16px;
+  border: 1px solid #39b54a;
+  border-radius: 100%;
+  padding: 5px;
+  color: #39b54a;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main section {
+  margin: 10px 0;
+}
+.descripciones {
+  margin-top: 15px;
+  display: none;
+}
+
+.descuentos {
+  color: #39b54a;
+  flex-grow: 3;
+}
+
+.imagen-banner {
+  width: 100%;
+}
+.container-precio-descuento {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo > img {
+  height: 8vh;
+}
+
+.form-search {
+  width: 100%;
+}
+
+.input {
+  border: none;
+}
+
+.submit {
+  border: none;
+}
+
+.link-nav > i {
+  margin: 0 1.5px;
+}
+
+.div-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo,
+.div-form-search {
+  width: 50%;
+}
+.logo > img {
+  height: 5vh;
+  width: 100%;
+}
+
+.form-search > input,
+.form-search > button {
+  height: 5vh;
+  border: none;
+  margin: 0;
+}
+
+.form-search > input {
+  width: 80%;
+  border: none;
+  margin: 0;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.form-search > button {
+  background-color: white;
+  width: 20%;
+  margin-left: -10px;
+  position: relative;
+  top: -1px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.div-2 {
+  width: 100%;
+}
+
+/* Estilos del registro */
+.body-registro {
+  background-color: white;
+}
+
+.main-registro {
+  background-color: #ebebeb;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.footer-registro {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.formulario-registro {
+  text-align: center;
+  padding: 10px;
+}
+
+.items-registro {
+  margin: 10px;
+}
+
+.items-registro > select {
+  border: none;
+}
+
+.items-registro > button {
+  border: none;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 80px;
+}
+
+.items-registro > button[type="reset"] {
+  background-color: #d1cece;
+}
+
+.items-registro > .button-cancelar:hover {
+  background: linear-gradient(to top, #fc4444, #fb6d6d);
+}
+
+.items-registro > button[type="submit"] {
+  background-color: #d1cece;
+}
+
+.items-registro > .button-enviar:hover {
+  background: linear-gradient(to top, #33f84d, #66f479);
+}
+
+.button-enviar > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.items-registro > input {
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  height: 4vh;
+  padding: 2px;
+}
+
+/* Estilos del login */
+
+.body-login {
+  background-color: white;
+}
+
+.main-inicio-sesion {
+  background-color: #ebebeb;
+}
+
+.formulario-login {
+  text-align: center;
+  padding: 10px;
+}
+
+.items-inicio-sesion {
+  margin: 10px;
+}
+
+.items-inicio-sesion > input {
+  width: 60%;
+  height: 4vh;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.items-inicio-sesion > button {
+  width: 60%;
+  height: 3vh;
+  border: none;
+  border-radius: 5px;
+  background-color: #d1cece;
+}
+
+.items-inicio-sesion > button:hover {
+  background: linear-gradient(to top, #33f84d, #66f479);
+}
+
+.items-inicio-sesion button > a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (min-width: 361px) {
+  .descripciones {
+    display: block;
+  }
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .burger-menu {
+    display: none;
+  }
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+    justify-content: space-between;
+  }
+  main section article {
+    width: 45%;
+  }
+
+  header > .div-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 10px;
+  }
+
+  .div-form > .div-1 {
+    width: 30%;
+    flex-grow: 1;
+  }
+  .div-form > .div-2 {
+    width: 30%;
+    flex-grow: 1;
+  }
+
+  .div-link-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 10px;
+  }
+
+  .list-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .li-1 {
+    width: 17%;
+    margin: 0 5px;
+  }
+
+  .li-2 {
+    width: 28%;
+    margin: 0 5px;
+  }
+
+  .list-nav-2 {
+    justify-content: right;
+  }
+
+  .list-nav-2 > li {
+    margin: 0 5px;
+    text-align: right;
+  }
+
+  .cuerpos {
+    height: 5vh;
+  }
+
+  /* Estilos del registro */
+
+  .items-registro > input {
+    height: 6vh;
+  }
+
+  /* Estilos del login */
+
+  .items-inicio-sesion > input {
+    height: 6vh;
+  }
+
+  .items-inicio-sesion > button {
+    height: 5vh;
+  }
+}
+
+@media (min-width: 768px) {
+  main section article {
+    width: 22%;
+  }
+
+  /* Estilos del registro  */
+
+  .items-registro > input {
+    width: 40%;
+  }
+
+  /* Estilos del login  */
+
+  .items-inicio-sesion > input {
+    width: 40%;
+  }
+
+  .items-inicio-sesion > button {
+    width: 40%;
+  }
+}
+/* Amarillo: #EAC926;
+  Azul: #03264C;
+  Celeste: #1259c3;
+  Gris oscuro: #666;
+  Gris claro: #ebebeb;
+  Verde: #39b54a; */
