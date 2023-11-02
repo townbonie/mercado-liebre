@@ -15,6 +15,20 @@ header {
   box-sizing: border-box;
 }
 
+.div-cuerpos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.div-cuerpos > i {
+  margin: 0 0 0 auto;
+}
+
+.div-cuerpos > p {
+  margin: 0 auto 0 0;
+}
+
 .titulares {
   font-size: 24px;
 }
@@ -93,6 +107,19 @@ main {
 main section article {
   background-color: white;
   margin-bottom: 10px;
+  transition: all 500ms;
+}
+
+article:hover {
+  .descripciones {
+    display: block;
+  }
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.div-descripcion-producto > .fa-solid:hover {
+  transform: rotate(-90deg);
+  transition: transform 1000ms;
 }
 
 .div-descripcion-producto {
@@ -142,7 +169,8 @@ main section {
 }
 
 .form-search {
-  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .input {
@@ -181,7 +209,6 @@ main section {
 .form-search > input {
   width: 80%;
   border: none;
-  margin: 0;
   border-radius: 5px;
   padding: 0 5px;
 }
@@ -189,10 +216,6 @@ main section {
 .form-search > button {
   background-color: white;
   width: 20%;
-  margin-left: -10px;
-  position: relative;
-  top: -1px;
-  padding: 0 5px;
   border-radius: 3px;
 }
 
@@ -304,7 +327,7 @@ main section {
 }
 
 .items-inicio-sesion > button:hover {
-  background: linear-gradient(to top, #33f84d, #66f479);
+  background: #0022aa;
 }
 
 .items-inicio-sesion button > a {
@@ -313,12 +336,6 @@ main section {
 }
 
 @media (min-width: 361px) {
-  .descripciones {
-    display: block;
-  }
-  main section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
   .burger-menu {
     display: none;
   }
@@ -337,12 +354,14 @@ main section {
     flex-wrap: wrap;
     align-content: space-between;
     padding: 10px;
+    align-items: center;
   }
 
   .div-form > .div-1 {
     width: 30%;
     flex-grow: 1;
   }
+
   .div-form > .div-2 {
     width: 30%;
     flex-grow: 1;
@@ -378,10 +397,6 @@ main section {
   .list-nav-2 > li {
     margin: 0 5px;
     text-align: right;
-  }
-
-  .cuerpos {
-    height: 5vh;
   }
 
   /* Estilos del registro */
@@ -420,6 +435,23 @@ main section {
 
   .items-inicio-sesion > button {
     width: 40%;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .div-footer {
+    width: 30%;
+  }
+
+  .div-icon-footer > i {
+    transition: all 1s;
+  }
+
+  .div-icon-footer > i:hover {
+    color: #12c368;
   }
 }
 /* Amarillo: #EAC926;
